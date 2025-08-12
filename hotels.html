@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Select Hotel - Visitor Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hotel-container" id="hotel-container">
+    <h1>Select Your Hotel</h1>
+    <div class="hotel-grid">
+
+      <div class="hotel-card">
+        <div class="hotel-bg" style="background-image: url('sea.tmp');"></div>
+        <h2>SeaView Residency</h2>
+        <button onclick="showDetails('SeaView Residency')">Show Details</button>
+      </div>
+
+      <div class="hotel-card">
+        <div class="hotel-bg" style="background-image: url('OIP.jpg');"></div>
+        <h2>City Center Inn</h2>
+        <button onclick="showDetails('City Center Inn')">Show Details</button>
+      </div>
+
+      <div class="hotel-card">
+        <div class="hotel-bg" style="background-image: url('normal.jpg');"></div>
+        <h2>Budget Stay</h2>
+        <button onclick="showDetails('Budget Stay')">Show Details</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

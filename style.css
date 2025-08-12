@@ -1,0 +1,239 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & html - make full height and center content */
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+/* Center container-box vertically and horizontally */
+body {
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+  background-color: #f0f4f8; /* or any color you prefer */
+  height: 100vh; /* fill full viewport height */
+  
+}
+
+/* Container box for dashboard and similar pages */
+.container-box {
+  background: linear-gradient(135deg, #2b1055, #7597de);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  border: 2px solid #3498db;
+  margin-top: 100px; /* pushes container down a bit */
+  color: rgb(0, 0, 0); /* add this to ensure text inside container is visible */
+}
+
+/* Headings and paragraph */
+h1 {
+  color: inherit; 
+  margin-bottom: 15px;
+}
+
+p {
+  color: inherit;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+/* Link back */
+a.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #2980b9;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+a.back-link:hover {
+  background-color: #1c5980;
+  text-decoration: underline;
+}
+
+/* Button styling (generic) */
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin: 5px 0;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Login container */
+.login-container {
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+  position: relative;
+  color: #ffffff;
+}
+
+/* Logo */
+.logo img {
+  width: 80px;
+  height: auto;
+}
+
+.logo h1 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+/* Login box */
+.login-box {
+  margin-top: 20px;
+}
+
+.login-box input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Password toggle */
+.password-field {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.password-field input {
+  width: 100%;
+  padding-right: 35px;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.password-field span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+  font-size: 20px;
+  color: #555;
+}
+
+/* Hotel container and grid */
+.hotel-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.hotel-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Hotel cards */
+.hotel-card {
+  background: white;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.hotel-card:hover {
+  transform: scale(1.05);
+}
+
+.hotel-bg {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.hotel-card h2 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.hotel-card button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.hotel-card button:hover {
+  background-color: #2980b9;
+}
+
+/* Form container */
+.form-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Confirmation message */
+#confirmation {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 15px;
+  border-radius: 6px;
+  color: #155724;
+  margin-top: 20px;
+}
+}

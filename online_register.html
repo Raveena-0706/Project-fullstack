@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container-box">
+    <div class="form-container">
+      <h1>Online Registration</h1>
+      <form id="onlineForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="contact">Contact Number:</label>
+        <input type="number" id="contact" name="contact" required />
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin" required />
+
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required />
+
+        <label for="host">Host (Person Visiting):</label>
+        <input type="text" id="host" name="host" required />
+
+        <label for="roomType">Room Type:</label>
+        <select id="roomType" name="roomType" required>
+          <option value="">Select Room Type</option>
+          <option value="AC">AC</option>
+          <option value="Non-AC">Non-AC</option>
+        </select>
+
+        <label for="idProofType">ID Proof Type:</label>
+        <select id="idProofType" name="idProofType" required>
+          <option value="">Select ID Proof</option>
+          <option value="Aadhar Card">Aadhar Card</option>
+          <option value="Passport">Passport</option>
+          <option value="Driver's License">Driver's License</option>
+          <option value="Voter ID">Voter ID</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="idProofNumber">ID Proof Number:</label>
+        <input type="number" id="idProofNumber" name="idProofNumber" required />
+
+        <button type="submit">Submit Registration</button>
+      </form>
+
+      <div id="onlineConfirmation" style="display:none; margin-top:20px;"></div>
+    </div>
+  </div>
+
+  <script src="online_register.js"></script>
+</body>
+</html>

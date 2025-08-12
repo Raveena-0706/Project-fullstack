@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Offline Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container-box">
+    <div class="form-container">
+      <h1>Offline Registration</h1>
+      <form id="offlineForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="contact">Contact Number:</label>
+        <input type="number" id="contact" name="contact" required />
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin" required />
+
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required />
+
+        <label for="host">Host (Person Visiting):</label>
+        <input type="text" id="host" name="host" required />
+
+        <label for="roomType">Room Type:</label>
+        <select id="roomType" name="roomType" required>
+          <option value="">Select Room Type</option>
+          <option value="AC">AC</option>
+          <option value="Non-AC">Non-AC</option>
+        </select>
+
+        <button type="submit">Submit Registration</button>
+      </form>
+
+      <div id="offlineConfirmation" style="display:none; margin-top:20px;"></div>
+    </div>
+  </div>
+
+  <script src="offline_register.js"></script>
+</body>
+</html>
